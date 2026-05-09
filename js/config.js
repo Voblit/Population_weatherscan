@@ -43,7 +43,7 @@ var forecastPackage = {group: "forecast", slides: [
   //{ function: "dopplerRadar" },
   { function: "dayDesc" },
   { function: "extendedForecast" },
-  { function: "almanac" },
+//  { function: "almanac" },
   //{ function: "regionalSat" },
   //{ function: "regionalRadar" },
   //{ function: "dopplerRadar" },
@@ -67,7 +67,7 @@ var spanishForecastPackage = {group: "spanish", slides: [
     { function: "EScurrentConditions" },
     { function: "ESnearbyCities" },
     { function: "ESextendedForecast" },
-    { function: "ESalmanac" },
+//    { function: "ESalmanac" },
 ]}
 var golfPackage = {group: "golf", slides: [
   { function: "upNext" },
