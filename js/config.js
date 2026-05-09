@@ -63,11 +63,11 @@ var miniCorePackage = {group: "minicore", slides: [
   //{ function: "dopplerRadar" },
 ]}
 var spanishForecastPackage = {group: "spanish", slides: [
- // { function: "upNext" },
-  //{ function: "EScurrentConditions" },
-  //{ function: "ESnearbyCities" },
-  //{ function: "ESextendedForecast" },
-  //{ function: "ESalmanac" },
+    { function: "upNext" },
+    { function: "EScurrentConditions" },
+    { function: "ESnearbyCities" },
+    { function: "ESextendedForecast" },
+    { function: "ESalmanac" },
 ]}
 var golfPackage = {group: "golf", slides: [
   { function: "upNext" },
