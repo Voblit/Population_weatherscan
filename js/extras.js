@@ -161,33 +161,30 @@ function fadeSlideOut(div, time) {//this one you fade
 }
 
 function getIcon(div, iconcode, wind, language) {
-	language = language || "english"
-	try {
-		if (iconcode == "blank") {
-			div.css('background-image', 'url("/images/icons/blank.png')
-		} else {
-			if (iconcode == 44 || iconcode == null || iconcode == undefined || iconcode == "") {
-				div.css('background-image', 'url("/images/icons/44.png')
-			} else {
-				if (wind >= 30) {
-					if (language == "spanish") {
-						div.css('background-image', 'url("/images/icons/24spanish.png')
-					} else {
-						div.css('background-image', 'url("/images/icons/24.png')
-					}
-				} else {
-					if (language == "spanish" && (iconcode == 8 || iconcode == 10 || iconcode == 19 || iconcode == 20 || iconcode == 21 || iconcode == 22 || iconcode == 23 || iconcode == 24 || iconcode == 25 || iconcode == 36)) {
-						div.css('background-image', 'url("/images/icons/'+iconcode+'spanish.png')
-					} else {
-						div.css('background-image', 'url("/images/icons/'+iconcode+'.png')
-					}
-				}
-			}
-		}
-		
-	} catch (error) {
-		div.css('background-image', 'url("/images/icons/44.png')
-	}
+    language = language || "english"
+    try {
+        if (iconcode == "blank") {
+            div.css('background-image', 'url("images/icons/blank.png")')
+        } else {
+            if (iconcode == 44 || iconcode == null || iconcode == undefined || iconcode == "") {
+                div.css('background-image', 'url("images/icons/44.png")')
+            } else {
+                if (wind >= 30) {
+                    if (language == "spanish") {
+                        div.css('background-image', 'url("images/icons/24spanish.png")')
+                    } else {
+                        div.css('background-image', 'url("images/icons/24.png")')
+                    }
+                } else {
+                    if (language == "spanish" && (iconcode == 8 || iconcode == 10 || iconcode == 19 || iconcode == 20 || iconcode == 21 || iconcode == 22 || iconcode == 23 || iconcode == 24 || iconcode == 25 || iconcode == 36)) {
+                        div.css('background-image', 'url("images/icons/' + iconcode + 'spanish.png")')
+                    } else {
+                        div.css('background-image', 'url("images/icons/' + iconcode + '.png")')
+                    }
+                }
+            }
+        }
+    } catch(e) { console.log("Icon error: ", e); }
 }
 function getMapAdjustedCenters(lat, lon) {
 	//REGIONAL
